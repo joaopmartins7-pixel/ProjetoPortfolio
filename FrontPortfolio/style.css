@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagina-login {
+    height: 100vh;
+    display: flex;
+}
+.lado-esquerdo {
+    width: 50%;
+    background-image: url(img/fundo_gerenciador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: white;
+}
+
+.conteudo-esquerdo h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+    color: #faf5eb;
+}
+
+.conteudo-esquerdo p {
+    font-size: 18px;
+    color: #fcf1dc;
+}
+
+.lado-direito {
+    width: 50%;
+    background-color: #ffc6c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-container {
+    width: 420px;
+    box-shadow: 0 10px 60px 10px #e99393;
+    background-color: #4e6f4bf4;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.cabecalho-login {
+    margin-bottom: 35px;
+}
+
+.cabecalho-login h2 {
+    font-size: 40px;
+    color: #fad6d6;
+    margin-bottom: 10px;
+}
+
+.cabecalho-login p {
+    font-size: 22px;
+    color: #f9c9c9;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fbc8c8;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #f7a6a6;
+    color: #456a41;
+    background-color: #faf5eb;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+input:focus {
+    border-color: #537b4f;
+    outline: none;
+}
+
+input::placeholder {
+    color: #e68b8b;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fbc8c8;
+    color: #537b4f;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #f6abab;
+}
+
+@media (max-width: 800px) {
+
+    .pagina-login {
+        flex-direction: column;
+    }
+
+    .lado-esquerdo,
+    .lado-direito {
+        width: 100%;
+    }
+
+    .lado-esquerdo {
+        min-height: 280px;
+        padding: 40px;
+    }
+
+    .conteudo-esquerdo h1 {
+        font-size: 36px;
+    }
+
+    .lado-direito {
+        padding: 40px 25px;
+        height: 100%;
+    }
+}
+
+a{
+    color: #b76f6f;
+    text-decoration: none;
+}

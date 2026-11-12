@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/fundo_rosa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #f9c9c9;
+    height: 110px;
+    border-bottom: 1px solid #f7a6a6;
+}
+
+header h1 {
+    color: #537b4f;
+    font-size: 38px;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+header button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+header button a,
+.div-header p {
+    color: #537b4f;
+    text-decoration: none;
+}
+
+header button a:hover{
+    color: #7a8c51;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 100px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background-color: #4e6f4bf4;
+    border: 2px solid #f7a6a6;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #f9d0d0;
+    font-size: 38px;
+    transition: 0.3s;
+    width: 380px;
+}
+
+.menu-item:hover {
+    background-color: #425d3f;
+    color: #fcf1dc;
+    transform: scale(1.03);
+}
