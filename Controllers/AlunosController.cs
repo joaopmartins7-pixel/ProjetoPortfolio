@@ -33,6 +33,7 @@ namespace ProjetoPortfolio.Controllers
                 .Select(a => new AlunoTurmaDto
                 {
                     Nome = a.Nome,
+                    Email = a.Email,
                     NomeTurma = a.Turma.Nome
                 }).ToListAsync();
 
